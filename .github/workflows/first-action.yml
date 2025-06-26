@@ -1,0 +1,12 @@
+name: First workflow
+on: workflow_dispatch #mauallu trigger
+jobs:
+  first-job: #This job identifier i.e name
+    runs-on: ubuntu-latest #Defining the runner
+    steps: #Definds task
+      - name: Print greetings
+        run: echo "Hello World"
+      - name: Print goodbye!
+        run: echo "Good Bye!"
+  
+    
